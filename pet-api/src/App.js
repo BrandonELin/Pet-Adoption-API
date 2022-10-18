@@ -1,12 +1,10 @@
-
 import './App.css';
-import "./App.css";
-
 import { useState, useEffect } from "react";
 import { Route, Routes, useNavigate } from "react-router-dom";
 import About from './pages/About';
 import Home from './pages/Home';
 
+import PetDisplay from './components/PetDisplay';
 
 let init = false;
 
@@ -42,12 +40,17 @@ function App() {
     }
   };
 
+  useEffect(()=> {
+    getAnimals();
+  }, [])
+
   return (
     <div className="App">
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
       </Routes>
+      <PetDisplay/>
     </div>
   );
 }
