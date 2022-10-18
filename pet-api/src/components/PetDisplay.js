@@ -3,7 +3,7 @@ export default function PetDisplay ({pet}) {
     //The component must return some JSX
     const loaded = () => {
         return (
-            <div>
+            <div className="display">
                 <img src={pet.photos.small} alt={pet.name} />
                 <h1>{pet.name}</h1>
                 <h2>{pet.type}</h2>
