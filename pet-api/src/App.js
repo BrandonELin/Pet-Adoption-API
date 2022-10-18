@@ -1,9 +1,7 @@
-
 import './App.css';
-import "./App.css";
-
 import { useState, useEffect } from "react";
 import { Route, Routes, useNavigate } from "react-router-dom";
+import PetDisplay from './components/PetDisplay';
 
 let init = false;
 
@@ -41,6 +39,7 @@ function App() {
 
   return (
     <div className="App">
+      <PetDisplay/>
     </div>
   );
 }

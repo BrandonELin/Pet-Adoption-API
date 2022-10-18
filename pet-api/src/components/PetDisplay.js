@@ -4,10 +4,10 @@ export default function PetDisplay ({pet}) {
     const loaded = () => {
         return (
             <div>
-                <h1>{pet.Title}</h1>
-                <h2>{pet.Genre}</h2>
-                <img src={pet.Poster} alt={pet.Title} />
-                <h2>{pet.Year}</h2>
+                <img src={pet.photos.small} alt={pet.name} />
+                <h1>{pet.name}</h1>
+                <h2>{pet.type}</h2>
+                <h2>{pet.description}</h2>
             </div>
         )
     }
