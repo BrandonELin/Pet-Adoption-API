@@ -13,7 +13,7 @@ export default function PetDisplay ({pet}) {
     }
 
     const loading = () => {
-        return <div>No data to display at the moment(</div>
+        return <div>No data to display at the moment</div>
     }
 
     return pet ? loaded() : loading()
