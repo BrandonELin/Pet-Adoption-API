@@ -1,6 +1,6 @@
 function Form() {
     return ( 
-        <div className="testbox">
+        <div className="formbox">
             <h1>Submit Adoption Request</h1>
             <form>
                 <label>Name: <input type="text" name="name" placeholder="Full name"/></label>
