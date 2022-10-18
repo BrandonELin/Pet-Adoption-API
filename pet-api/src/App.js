@@ -1,5 +1,11 @@
-import logo from './logo.svg';
+
 import './App.css';
+import "./App.css";
+
+import { useState, useEffect } from "react";
+import { Route, Routes, useNavigate } from "react-router-dom";
+
+let init = false;
 
 function App() {
   const apiKey = process.env.REACT_APP_API;
