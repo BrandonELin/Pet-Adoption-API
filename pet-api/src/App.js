@@ -37,6 +37,10 @@ function App() {
     }
   };
 
+  useEffect(()=> {
+    getAnimals();
+  }, [])
+
   return (
     <div className="App">
       <PetDisplay/>
