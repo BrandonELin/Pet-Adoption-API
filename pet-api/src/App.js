@@ -4,6 +4,9 @@ import "./App.css";
 
 import { useState, useEffect } from "react";
 import { Route, Routes, useNavigate } from "react-router-dom";
+import About from './pages/About';
+import Home from './pages/Home';
+
 
 let init = false;
 
@@ -41,6 +44,10 @@ function App() {
 
   return (
     <div className="App">
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+      </Routes>
     </div>
   );
 }
