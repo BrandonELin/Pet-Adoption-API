@@ -31,4 +31,6 @@ textarea {
 label {
     margin-bottom: 20px;
 }
-
+display {
+    justify-content: center;
+}
